@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtMsg: UITextField!
     
     //MARK: - Life Cycle Methods.
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     //MARK: - UIButton Action Methods.
@@ -26,6 +28,8 @@ class ViewController: UIViewController {
         lblMsg.text = txtMsg.text
         
         txtMsg.text = ""
+        
+        print("Type Message : \(lblMsg.text!)")
     }
     
 }
